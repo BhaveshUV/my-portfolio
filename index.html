@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Bhavesh Vishwakarma</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./#about">About</a></li>
+                <li><a href="./#experience">Experience</a></li>
+                <li><a href="./#projects">Projects</a></li>
+                <li><a href="./#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Bhavesh Vishwakarma</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container profile-pic">
+            <img src="./assets/profile-pic.png" alt="user-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text_p1">Hi! I'm</p>
+            <h1 class="title">Bhavesh Vishwakarma</h1>
+            <p class="section__text_p2">Frontend React developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                    onclick="window.open('https://drive.google.com/file/d/1-fCp84F5EBa_73zJlxAYQfdoR9jYNuZd/view?usp=sharing')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="my linkedin profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/bhavesh-vishwakarma-63975b244/'">
+                <img src="./assets/github.png" alt="my GitHub profile" class="icon"
+                    onclick="location.href='https://github.com/BhaveshUV'">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="dark">
+        <p class="section__text_p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container about-section-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="eduacation icon" class="icon">
+                    <h3>Education</h3>
+                    <p>B.E Bachelors Degree</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p>Fresher</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text_p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technologies</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>React JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Tailwind CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Git & GitHub</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects" class="dark">
+        <p class="section__text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/food-delivery-app.png" alt="Project 1: Food delivery app" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Food Delivery App</h2>
+                <span>with functional cart</span>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/BhaveshUV/food-delivery-app'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://bhaveshuv.github.io/food-delivery-app/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/netflixGPT.png" alt="Project 2: NetflixGPT" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">NetflixGPT</h2>
+                <span>with movie recommendation system</span>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/BhaveshUV/netflix-gpt'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://super-stroopwafel-c3d1b1.netlify.app/#/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/youtube.png" alt="Project 3: YouTube clone" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">YouTube Clone</h2>
+                <span>with multi-level comment section</span>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/BhaveshUV/netflix-gpt'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://bhaveshuv.github.io/youtube-clone/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text_p1">Get In Touch</p>
+        <h1 class="title">Contact Info</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:bhaveshruv@gmail.com">bhaveshruv@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/bhavesh-vishwakarma-63975b244/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="./#about">About</a></li>
+                    <li><a href="./#experience">Experience</a></li>
+                    <li><a href="./#projects">Projects</a></li>
+                    <li><a href="./#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
