@@ -10,6 +10,12 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    /* Standard syntax */
+    user-select: none;
+    /* For Safari */
+    -webkit-user-select: none;
+    /* For IE 10 and IE 11 */
+    -ms-user-select: none;
 }
 
 html {
@@ -100,12 +106,15 @@ a:hover {
 }
 
 .menu-links {
+    box-sizing: border-box;
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: rgb(241, 241, 241, 0.75);
+    border: 1px solid black;
+    border-radius: 0.5rem;
     width: fit-content;
-    max-height: 0;
+    display: none;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
 }
@@ -126,6 +135,7 @@ a:hover {
 
 .menu-links.open {
     max-height: 300px;
+    display: block;
 }
 
 .hamburger-icon.open span:first-child {
